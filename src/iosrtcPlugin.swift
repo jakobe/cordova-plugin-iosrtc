@@ -21,7 +21,7 @@ class iosrtcPlugin : CDVPlugin {
 
 
 	// This is just called if <param name="onload" value="true" /> in plugin.xml.
-	override init(webView: UIWebView) {
+	override init() {
 		NSLog("iosrtcPlugin#init()")
 
 		// Initialize DTLS stuff.
@@ -35,7 +35,7 @@ class iosrtcPlugin : CDVPlugin {
 			rtcPeerConnectionFactory: rtcPeerConnectionFactory
 		)
 
-		super.init(webView: webView)
+		super.init()
 	}
 
 
